@@ -32,12 +32,20 @@ namespace BalancedBracketsNS
                 {
                     brackets++;
                 }
+                
                 else if (ch == ']')
                 {
                     brackets--;
                 }
+
+                if (brackets < 0)
+                {
+                    break;
+                }                
             }
             return brackets == 0;
+
+                      
         }
     }
 }
