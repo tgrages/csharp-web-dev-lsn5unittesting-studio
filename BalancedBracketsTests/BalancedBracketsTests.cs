@@ -13,5 +13,14 @@ namespace BalancedBracketsTests
         {
             Assert.AreEqual(true, true);
         }
+
+        //Write a test that returns true when the string is empty
+        [TestMethod]
+
+        public void EmptyStringReturnsTrue()
+        {
+            Assert.IsTrue(BalancedBrackets.HasBalancedBrackets(""));
+        }
+
     }
 }
